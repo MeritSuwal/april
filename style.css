@@ -1,0 +1,31 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(
+        to right, black 0%, black 50%, rgb(252, 249, 253) 50%, rgb(252, 249, 253) 100%);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    
+}
+
+.white_rec{
+    width: 50%;
+    height: 52%;
+    margin-right: 0px;
+    margin-left: 15%;
+    margin-top: 28%;
+    margin-bottom: 28%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(252, 249, 253);   
+}
