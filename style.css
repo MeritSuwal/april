@@ -40,6 +40,7 @@ body {
     border-right: 0px;
     border-width: 2%;
     border-color: rgb(252, 249, 253);
+    position: relative;
     /* transition-timing-function: linear;
     transition: stroke-dashoffset 4s, stroke-dasharray 4s; */
 }
@@ -367,10 +368,97 @@ body {
     }
 }
 
+.white_rec::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+.white_rec::before {
+    animation: animes 2s linear forwards;
+    animation-delay: 108ms;
+    animation-direction: reverse;
+}
+
+@keyframes animes {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(252, 249, 253);
+        border-left-color: transparent;
+    }
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(252, 249, 253);
+        border-left-color: rgb(252, 249, 253);
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(252, 249, 253);
+        border-left-color: rgb(252, 249, 253);
+    }
+}
+
+.white_rec::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+
+.white_rec::after {
+    animation: anime 2s linear forwards;
+    animation-direction: alternate;
+}
+
+@keyframes anime {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: rgb(252, 249, 253);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: rgb(252, 249, 253);
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
 span {
     opacity: 0;
-    transition: all 0.4s ease;
-    transition-delay: 1800ms;
+    transition: all 0.6s ease;
+    transition-delay: 2200ms;
 }
 
 span.fade {
@@ -381,7 +469,7 @@ h2 {
     opacity: 0;
     display: inline;
     transition: all 0.4s ease;
-    transition-delay: 1600ms;
+    transition-delay: 1000ms;
     font-size: 3.5vh;
     font-weight: 600;
 }
