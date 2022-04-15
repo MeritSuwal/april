@@ -381,7 +381,7 @@ h2 {
     opacity: 0;
     display: inline;
     transition: all 0.4s ease;
-    transition-delay: 1800ms;
+    transition-delay: 1600ms;
     font-size: 3.5vh;
     font-weight: 600;
 }
