@@ -1,6 +1,8 @@
 * {
     padding: 0%;
     margin: 0%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -9,10 +11,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-}
-
-h1 {
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .white_rec {
@@ -24,7 +23,7 @@ h1 {
     margin-bottom: 28%;
     border-style: solid;
     border-right: 0px;
-    border-width: 2px;
+    border-width: 2%;
     border-color: rgb(252, 249, 253);
 }
 
@@ -32,28 +31,257 @@ h1 {
     width: 50%;
     height: 52%;
     border-style: solid;
-    border-width: 2px;
+    border-width: 2%;
     border-color: black;
     border-left: 0px;
     margin-left: 0px;
     margin-right: 15%;
     margin-top: 28%;
     margin-bottom: 28%;
+    position: relative;
 }
 
-.white_text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 5vh;
-    padding: 8%;
+.white_head {
+    font-size: 11vh;
+    padding: 7% 7% 0% 7%;
+    margin-top: 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(252, 249, 253);
 }
+
+
+/* .white_text {
+    width: fit-content;
+    height: fit-content;
+    object-fit: contain;
+} */
 
 .black_text {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 5vh;
+    font-size: 6vh;
     padding: 8%;
     text-align: right;
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
+.insta_svg {
+    width: 30px;
+    height: 30px;
+    bottom: 2%;
+    right: 1%;
+    position: fixed;
+    transition: all 200ms;
+}
+
+.insta_svg:hover {
+    transform: scale(1.15);
+}
+
+.twit_svg {
+    width: 30px;
+    height: 30px;
+    bottom: 8%;
+    right: 1%;
+    position: fixed;
+    transition: all 200ms;
+}
+
+.twit_svg:hover {
+    transform: scale(1.15);
+}
+
+.git_svg {
+    width: 30px;
+    height: 30px;
+    bottom: 20%;
+    right: 1%;
+    position: fixed;
+    transition: all 200ms;
+}
+
+.git_svg:hover {
+    transform: scale(1.15);
+}
+
+.link_svg {
+    width: 30px;
+    height: 30px;
+    bottom: 14%;
+    right: 1%;
+    position: fixed;
+    transition: all 200ms;
+}
+
+.link_svg:hover {
+    transform: scale(1.15);
+}
+
+.skills {
+    font-family: 'Karla', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    font-size: 3.5vh;
+    font-weight: 600;
+    padding-bottom: 0px;
+    margin-left: 27%;
+    color: rgb(252, 249, 253);
+    margin-top: 0;
+    transition: all 360ms;
+}
+
+.skills:hover {
+    transform: scale(1.2);
+}
+
+.about {
+    font-family: 'Karla', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    font-size: 3.5vh;
+    font-weight: 600;
+    padding-bottom: 0px;
+    margin-left: 63%;
+    color: black;
+    margin-top: 0;
+    transition: all 360ms;
+}
+
+.about:hover {
+    transform: scale(1.2);
+}
+
+.headin {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-weight: 650;
+    position: absolute;
+    top: 3.2%;
+    font-size: 6.65vh;
+    left: 2.5%;
+    color: rgb(252, 249, 253);
+}
+
+.code_img {
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 6%;
+    object-fit: contain;
+    padding: 5% 5% 0% 5%;
+}
+
+.work_svg {
+    height: 32px;
+    position: absolute;
+    bottom: 6%;
+    left: 3%;
+    border-radius: 100%;
+    background-color: rgb(252, 249, 253);
+    border: 5px solid rgb(252, 249, 253);
+    transition: all 300ms;
+}
+
+.work_svg:hover {
+    transform: scale(1.2);
+}
+
+.contact {
+    font-family: 'Square Peg', cursive;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    top: 4%;
+    right: 2%;
+    font-size: 5.75vh;
+    font-weight: 585;
+    /* color: black; */
+    background: linear-gradient(to right, rgb(80, 139, 132), rgb(80, 139, 132) 50%, rgb(0, 0, 0) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: all 270ms ease;
+    text-decoration: none;
+}
+
+.contact:hover {
+    background-position: 0 100%;
+    transform: scale(1.08);
+    font-weight: 645;
+}
+
+.intro {
+    color: rgb(252, 249, 253);
+    font-size: 5.5vh;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    padding: 2.8% 3% 1% 7%;
+}
+
+.design {
+    color: rgba(252, 249, 253, 0.758);
+    font-size: 3.5vh;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    padding: 1% 3% 2% 7%;
+}
+
+
+/* .l1 {
+    height: 7rem;
+    border: solid;
+    border-width: 1%;
+    border-right: 1px;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(252, 249, 253);
+    left: 2.5%;
+}
+
+.l2 {
+    height: 5rem;
+    border: solid;
+    border-width: 1%;
+    border-right: 1px;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(252, 249, 253);
+    left: 3.5%;
+}
+
+.l3 {
+    height: 3rem;
+    border: solid;
+    border-width: 1%;
+    border-right: 1px;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(252, 249, 253);
+    left: 4.5%;
+}
+
+.l4 {
+    height: 1rem;
+    border: solid;
+    border-width: 1%;
+    border-right: 1px;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(252, 249, 253);
+    left: 5.5%;
+}
+
+.l5 {
+    height: 0rem;
+    border: solid;
+    border-width: 1%;
+    border-right: 1px;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(252, 249, 253);
+    left: 6.5%;
+} */
 
 
 /* .social {
