@@ -79,34 +79,3 @@ anime.timeline({ loop: false })
         duration: 150,
         delay: (el, i) => 100 + 30 * i
     });
-
-var loader = document.getElementById('preloader');
-window.addEventListener("load",
-    function() {
-        loader.style.display = "none";
-    })
-
-
-
-//preloader
-
-// $('.js-preloader').preloadinator();
-
-// $('.js-preloader').preloadinator({
-//     scroll: false
-// });
-
-// $('.js-preloader').preloadinator({
-//     minTime: 2000
-// });
-
-// $('.js-preloader').preloadinator({
-//     animation: 'fadeOut',
-//     animationDuration: 400
-// });
-
-// $('.js-preloader').preloadinator({
-//     afterDisable < a href = "https://www.jqueryscript.net/tags.php?/Scroll/" > Scroll < /a>: function() {},
-//     afterEnableScroll: function() {},
-//     afterRemovePreloader: function() {}
-// });
