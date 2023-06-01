@@ -34,7 +34,7 @@
 
     <div class="dark"></div>
 
-    <div class="headin">MS</div>
+    <div id="headin">MS</div>
 
     <div class="white_rec">
         <div class="white_text">
@@ -57,13 +57,17 @@
     </div>
 
     <div class="about">About.</div>
+
+    <div id="bout"></div>
+    <!-- <div class="bout">
+        <a href="./about/about.html">About.</a>
+    </div> -->
     <div class="skills">My Skills.</div>
 
     <section class="cd-section">
         <div class="cd-modal-action">
             <div id="myBtn" data-type="modal-trigger">
                 <div class="work_svg"><img src="svg/bag.svg"></div>
-
                 <div class="hide">Work</div>
             </div>
         </div>
@@ -77,18 +81,26 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="close">&times;</div>
-            <p>Some text in the Modal..</p>
+            <div class="modal-content-text">
+                Work <br> -- Some Text
+            </div>
         </div>
 
     </div>
 
-    <div class="contact"><span data-content="Get in Touch" aria-hidden="true"></span>> Get in Touch...</span>
+    <div class="contact"><span data-content="Get in Touch" aria-hidden="true">
+        </span> > Get in Touch...
+        </span>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
     <script src="./script.js"></script>
+    <script src="./app.js"></script>
 
 
 </body>

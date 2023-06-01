@@ -18,6 +18,7 @@ function onTick() {
         complete();
         return;
     }
+
 }
 
 function complete() {
@@ -106,3 +107,16 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+var bout = document.getElementById("about");
+// bout.innerHTML = `<a href="https://www.google.com">${bout.innerHTML}</a>`;
+bout.onclick = function() {
+    modal.style.display = "block";
+}
+
+// const myDiv = document.getElementsByClassName("about");
+// const children = myDiv.children;
+// for (let i = 0; i < children.length; i++) {
+//     const child = children[i];
+//     child.innerHTML = `<a href="https://www.google.com">${child.innerHTML}</a>`;
+// }
