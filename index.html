@@ -25,9 +25,16 @@
 
 <body>
 
+    <!-- <div id="preloader">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div> -->
+
     <div class="dark"></div>
 
-    <div class="headin">MS</div>
+    <div id="headin">MS</div>
 
     <div class="white_rec">
         <div class="white_text">
@@ -43,31 +50,57 @@
     </div>
 
     <div class="socials">
-        <img class="git_svg" src="svg/github.svg">
-        <img class="twit_svg" src="svg/twitter.svg">
-        <img class="insta_svg" src="svg/instagram.svg">
-        <img class="link_svg" src="svg/linkedin.svg">
+        <a href="https://github.com/MeritSuwal" target="_blank"> <img class="git_svg" src="svg/github.svg"></a>
+        <a href="https://twitter.com/merit_suwal" target="_blank"><img class="twit_svg" src="svg/twitter.svg"></a>
+        <a href="https://www.instagram.com/merit._.singh/" target="_blank"><img class="insta_svg" src="svg/instagram.svg"></a>
+        <a href="https://www.linkedin.com/in/merit-singh-5a94b4237/" target="_blank"><img class="link_svg" src="svg/linkedin.svg"></a>
     </div>
 
     <div class="about">About.</div>
+
+    <div id="bout"></div>
+    <!-- <div class="bout">
+        <a href="./about/about.html">About.</a>
+    </div> -->
     <div class="skills">My Skills.</div>
 
-    <!-- <div class="l1"></div>
-    <div class="l2"></div>
-    <div class="l3"></div>
-    <div class="l4"></div>
-    <div class="l5"></div>
-    <div class="l6"></div>
-    <div class="l7"></div>
-    <div class="l8"></div> -->
+    <section class="cd-section">
+        <div class="cd-modal-action">
+            <div id="myBtn" data-type="modal-trigger">
+                <div class="work_svg"><img src="svg/bag.svg"></div>
+                <div class="hide">Work</div>
+            </div>
+        </div>
 
-    <img class="work_svg" src="svg/bag.svg">
+        <a href="#0" class="cd-modal-close">Close</a>
+    </section>
 
-    <div class="contact"><span data-content="Get in Touch" aria-hidden="true"></span>> Get in Touch...</span>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="close">&times;</div>
+            <div class="modal-content-text">
+                Work <br> -- Some Text
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact"><span data-content="Get in Touch" aria-hidden="true">
+        </span> > Get in Touch...
+        </span>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
     <script src="./script.js"></script>
+    <script src="./app.js"></script>
 
 
 </body>
